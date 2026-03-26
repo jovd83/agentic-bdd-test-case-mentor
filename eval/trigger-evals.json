@@ -1,0 +1,74 @@
+[
+  {
+    "query": "Review this Gherkin feature file and tell me which scenarios violate BDD best practices.",
+    "should_trigger": true
+  },
+  {
+    "query": "Rewrite these Given When Then scenarios so they are more business-readable and less UI-driven.",
+    "should_trigger": true
+  },
+  {
+    "query": "Generate BDD scenarios from these acceptance criteria for refund eligibility.",
+    "should_trigger": true
+  },
+  {
+    "query": "Create a formal BDD review report with severity-ranked findings and coaching advice.",
+    "should_trigger": true
+  },
+  {
+    "query": "Turn this user story into Gherkin and call out any missing rule branches.",
+    "should_trigger": true
+  },
+  {
+    "query": "Review and improve this feature file against the business rules for account locking.",
+    "should_trigger": true
+  },
+  {
+    "query": "Assess this Scenario Outline for mixed rule branches, weak examples, and BDD anti-patterns.",
+    "should_trigger": true
+  },
+  {
+    "query": "Create a scorecard for this Gherkin feature against the supplied business rules and call out traceability gaps.",
+    "should_trigger": true
+  },
+  {
+    "query": "Draft Gherkin scenarios from this example map and these acceptance criteria without inventing missing rule branches.",
+    "should_trigger": true
+  },
+  {
+    "query": "Explain the difference between unit tests and integration tests.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write a Playwright script to automate this login form.",
+    "should_trigger": false
+  },
+  {
+    "query": "Summarize this Jira ticket in one paragraph.",
+    "should_trigger": false
+  },
+  {
+    "query": "Fix my broken SQL query.",
+    "should_trigger": false
+  },
+  {
+    "query": "Generate step definitions for my Cypress test suite.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write Cucumber step definitions from this feature file.",
+    "should_trigger": false
+  },
+  {
+    "query": "Convert this Gherkin feature into Playwright tests.",
+    "should_trigger": false
+  },
+  {
+    "query": "Design a REST API contract for order submission.",
+    "should_trigger": false
+  },
+  {
+    "query": "Proofread this markdown spec for grammar only.",
+    "should_trigger": false
+  }
+]

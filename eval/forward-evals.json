@@ -1,0 +1,78 @@
+{
+  "skill_name": "agentic-bdd-test-case-mentor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review the attached feature file against the attached account sign-in and account-locking requirements. Return oracle used, oracle sufficiency, confidence, severity-ranked findings, a short traceability and coverage assessment, and the top recommendations.",
+      "expected_output": "A findings-first review that cites the authoritative source, lowers confidence only as needed, flags UI-driven language, and calls out any coverage or traceability gaps without inventing metadata.",
+      "files": [
+        "examples/review-input.feature",
+        "examples/review-oracle.md"
+      ],
+      "expectations": [
+        "Names the oracle sources used and reports oracle sufficiency explicitly.",
+        "Ranks material review findings by severity before recommendations.",
+        "Flags the UI-scripted sign-in scenario or similarly weak business readability.",
+        "Avoids inventing new requirement IDs, tags, or unsupported business rules."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Rewrite the attached discount scenarios so they are stakeholder-facing, preserve the intended rules, split overloaded behavior when needed, and list unsupported assumptions separately.",
+      "expected_output": "A cleaner set of business-readable scenarios that preserve intent, improve naming and outcomes, and separate assumptions from confirmed behavior.",
+      "files": [
+        "examples/rewrite-source.feature"
+      ],
+      "expectations": [
+        "Preserves the Gold-customer discount intent instead of changing the business rule.",
+        "Improves scenario names and observable outcomes.",
+        "Splits or clearly repairs the overloaded checkout scenario.",
+        "Lists unsupported assumptions separately instead of fabricating details."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Generate a BDD feature file from the attached user story and acceptance criteria. Include the supported main path and expired-link rejection path, and list unresolved assumptions separately.",
+      "expected_output": "A generated feature file for password reset that covers the supported main and rejection paths while keeping missing rules explicit.",
+      "files": [
+        "examples/generation-source.md"
+      ],
+      "expectations": [
+        "Uses the provided user story and acceptance criteria as source inputs.",
+        "Generates a coherent feature with a valid-link success path.",
+        "Includes the expired-link rejection path because it is explicitly supported.",
+        "Calls out the unresolved second-reset-link rule as an assumption or gap."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Review and improve the attached password reset draft against the attached acceptance criteria. Keep the findings short, then provide the corrected artifact and list open assumptions.",
+      "expected_output": "A hybrid response that makes oracle sufficiency and confidence explicit, highlights the most material defects, and follows with a corrected password-reset feature.",
+      "files": [
+        "examples/hybrid-source.feature",
+        "examples/generation-source.md"
+      ],
+      "expectations": [
+        "Uses hybrid mode with short findings before the rewritten artifact.",
+        "Keeps oracle sufficiency and confidence explicit.",
+        "Adds or repairs the expired-link rejection path because the acceptance criteria support it.",
+        "Keeps the unresolved second-link invalidation rule explicit instead of inventing behavior."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Produce a formal BDD review report for the attached feature file against the attached requirements. Include an executive summary, oracle sufficiency and confidence, severity-ranked findings with evidence, traceability and coverage assessment, coaching recommendations, and an action plan.",
+      "expected_output": "A formal report that follows the review template, separates confirmed defects from missing information, and gives actionable coaching advice.",
+      "files": [
+        "examples/review-input.feature",
+        "examples/review-oracle.md"
+      ],
+      "expectations": [
+        "Uses a formal report structure rather than the default lightweight review contract.",
+        "Distinguishes findings from missing information or blocked decisions.",
+        "Includes traceability or coverage assessment tied to the supplied requirements.",
+        "Provides coaching recommendations and an action plan."
+      ]
+    }
+  ]
+}
