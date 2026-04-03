@@ -67,7 +67,6 @@ Nothing in this skill automatically promotes runtime notes into persistent memor
 ```text
 SKILL.md
 README.md
-CONTRIBUTING.md
 CHANGELOG.md
 LICENSE
 agents/
@@ -189,4 +188,4 @@ These are optional extensions, not built-in behavior.
 
 ## Maintainers
 
-Use [CONTRIBUTING.md](CONTRIBUTING.md) for editing rules, validation steps, and release hygiene.
+Use the validator and the workflow in [scripts/validate_skill_repo.py](scripts/validate_skill_repo.py) and [.github/workflows/validate.yml](.github/workflows/validate.yml) to check packaging and release hygiene.

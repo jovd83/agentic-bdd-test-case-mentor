@@ -9,7 +9,6 @@ from pathlib import Path
 REQUIRED_FILES = [
     "SKILL.md",
     "README.md",
-    "CONTRIBUTING.md",
     "CHANGELOG.md",
     "LICENSE",
     "agents/openai.yaml",
