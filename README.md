@@ -1,5 +1,9 @@
 # Agentic BDD Test Case Mentor
 
+[![version](https://img.shields.io/badge/version-1.1.0-blue)](CHANGELOG.md)
+[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jovd83)
+
 Portable Agent Skill for reviewing, rewriting, generating, and formally assessing BDD and Gherkin artifacts.
 
 This repository packages a standards-aligned skill that helps an agent turn weak or ambiguous BDD into clearer, more traceable, business-readable behavior specifications. It is designed for teams that use Gherkin as a collaboration tool, not as a disguised UI automation script.

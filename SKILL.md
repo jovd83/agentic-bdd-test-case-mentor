@@ -191,7 +191,17 @@ Use the examples under `examples/` to stay consistent with the repository's inte
 - [examples/generation-source.md](examples/generation-source.md)
 - [examples/quality-ladder.md](examples/quality-ladder.md)
 
-## 13. Resource map
+## 13. Gotchas
+
+Avoid these common mistakes while using this skill:
+
+- **The "Automation Handoff" Trap**: Do not suggest framework-specific code (Cucumber, Playwright, etc.) unless explicitly requested. This skill is for *business-readable BDD*, not test automation scripts.
+- **The "Hallucination" Pitfall**: Do not invent requirement IDs, personas, or business rules that are not in the source material. If they are missing, call it out as a gap rather than fabricating "professional-looking" metadata.
+- **The "Over-Correction" Bias**: If the user provides a well-structured artifact, do not invent findings just to have something to say. Say "No material defects identified" and focus on refinement instead.
+- **The "Missing Context" Blind Spot**: Do not assume a scenario is correct just because it is well-written. Always verify it against the strongest available oracle.
+- **The "Scope Creep" Drift**: Do not try to solve or generate an entire feature if the user only asked for a review of specific scenarios or rules. Focus on the requested scope.
+
+## 14. Resource map
 
 - Intake and mode selection: [references/intake-and-decision-flow.md](references/intake-and-decision-flow.md)
 - Formal review sequence: [references/review-workflow.md](references/review-workflow.md)
