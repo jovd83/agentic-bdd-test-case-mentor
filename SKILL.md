@@ -5,7 +5,7 @@ license: MIT
 metadata:
   dispatcher-output-artifacts: bdd_review, improved_feature_file, coaching_report
   dispatcher-risk: low
-  dispatcher-writes-files: true
+  dispatcher-writes-files: "true"
   dispatcher-input-artifacts: requirements, acceptance_criteria, bdd_feature, example_map
   dispatcher-capabilities: bdd-review, bdd-generation, gherkin-mentoring
   dispatcher-stack-tags: testing, bdd, gherkin

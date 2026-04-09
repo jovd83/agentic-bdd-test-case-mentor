@@ -60,9 +60,9 @@ def parse_frontmatter(path: Path) -> dict[str, str]:
     result: dict[str, str] = {}
 
     for line in raw.splitlines():
-        stripped = line.strip()
-        if not stripped:
+        if not line or line.startswith(" ") or line.startswith("\t"):
             continue
+        stripped = line.strip()
         if ":" not in stripped:
             raise ValueError(f"Invalid frontmatter line: {line}")
         key, value = stripped.split(":", 1)
