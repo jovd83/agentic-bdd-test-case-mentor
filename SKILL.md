@@ -3,6 +3,9 @@ name: agentic-bdd-test-case-mentor
 description: Review, rewrite, generate, and formally assess BDD or Gherkin feature files, scenarios, and scenario outlines from user stories, acceptance criteria, business rules, feature drafts, or example maps. Use when Codex needs to identify BDD anti-patterns, traceability or coverage gaps, weak Given-When-Then structure, overloaded scenarios, missing rule branches, or coaching-oriented improvements without drifting into framework-specific automation design.
 license: MIT
 metadata:
+  version: "1.0.0"
+    dispatcher-layer: execution
+    dispatcher-lifecycle: active
   dispatcher-output-artifacts: bdd_review, improved_feature_file, coaching_report
   dispatcher-risk: low
   dispatcher-writes-files: "true"
@@ -15,6 +18,12 @@ metadata:
 # Agentic BDD Test Case Mentor
 
 Use this skill to improve the quality, clarity, and reviewability of BDD artifacts while keeping the output business-readable and traceable to the source of truth.
+
+
+## Telemetry & Logging
+> [!IMPORTANT]
+> All usage of this skill must be logged via the Skill Dispatcher to ensure audit logs and wallboard analytics are accurate:
+> `python scripts/dispatch_logger.py --skill <skill_name> --intent <intent> --reason <reason>`
 
 ## 1. Establish the operating mode
 
