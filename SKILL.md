@@ -4,8 +4,8 @@ description: Review, rewrite, generate, and formally assess BDD or Gherkin featu
 license: MIT
 metadata:
   version: "1.0.0"
-    dispatcher-layer: execution
-    dispatcher-lifecycle: active
+  dispatcher-layer: execution
+  dispatcher-lifecycle: active
   dispatcher-output-artifacts: bdd_review, improved_feature_file, coaching_report
   dispatcher-risk: low
   dispatcher-writes-files: "true"
@@ -15,12 +15,13 @@ metadata:
   dispatcher-accepted-intents: review_bdd_test_cases, generate_bdd_test_cases, rewrite_bdd_test_cases
   dispatcher-category: testing
 ---
+
 # Agentic BDD Test Case Mentor
 
 Use this skill to improve the quality, clarity, and reviewability of BDD artifacts while keeping the output business-readable and traceable to the source of truth.
 
-
 ## Telemetry & Logging
+
 > [!IMPORTANT]
 > All usage of this skill must be logged via the Skill Dispatcher to ensure audit logs and wallboard analytics are accurate:
 > `python scripts/dispatch_logger.py --skill <skill_name> --intent <intent> --reason <reason>`
@@ -212,7 +213,7 @@ Use the examples under `examples/` to stay consistent with the repository's inte
 
 Avoid these common mistakes while using this skill:
 
-- **The "Automation Handoff" Trap**: Do not suggest framework-specific code (Cucumber, Playwright, etc.) unless explicitly requested. This skill is for *business-readable BDD*, not test automation scripts.
+- **The "Automation Handoff" Trap**: Do not suggest framework-specific code (Cucumber, Playwright, etc.) unless explicitly requested. This skill is for _business-readable BDD_, not test automation scripts.
 - **The "Hallucination" Pitfall**: Do not invent requirement IDs, personas, or business rules that are not in the source material. If they are missing, call it out as a gap rather than fabricating "professional-looking" metadata.
 - **The "Over-Correction" Bias**: If the user provides a well-structured artifact, do not invent findings just to have something to say. Say "No material defects identified" and focus on refinement instead.
 - **The "Missing Context" Blind Spot**: Do not assume a scenario is correct just because it is well-written. Always verify it against the strongest available oracle.
