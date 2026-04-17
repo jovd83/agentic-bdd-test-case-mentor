@@ -3,12 +3,12 @@ name: agentic-bdd-test-case-mentor
 description: Review, rewrite, generate, and formally assess BDD or Gherkin feature files, scenarios, and scenario outlines from user stories, acceptance criteria, business rules, feature drafts, or example maps. Use when Codex needs to identify BDD anti-patterns, traceability or coverage gaps, weak Given-When-Then structure, overloaded scenarios, missing rule branches, or coaching-oriented improvements without drifting into framework-specific automation design.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: 1.0.0
   dispatcher-layer: execution
   dispatcher-lifecycle: active
   dispatcher-output-artifacts: bdd_review, improved_feature_file, coaching_report
   dispatcher-risk: low
-  dispatcher-writes-files: "true"
+  dispatcher-writes-files: 'true'
   dispatcher-input-artifacts: requirements, acceptance_criteria, bdd_feature, example_map
   dispatcher-capabilities: bdd-review, bdd-generation, gherkin-mentoring
   dispatcher-stack-tags: testing, bdd, gherkin
