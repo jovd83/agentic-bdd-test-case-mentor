@@ -4,7 +4,7 @@ description: Review, rewrite, generate, and formally assess BDD or Gherkin featu
 license: MIT
 metadata:
   version: 1.0.0
-  dispatcher-layer: execution
+  dispatcher-layer: information
   dispatcher-lifecycle: active
   dispatcher-output-artifacts: bdd_review, improved_feature_file, coaching_report
   dispatcher-risk: low
