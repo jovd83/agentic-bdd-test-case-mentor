@@ -1,9 +1,7 @@
 ---
 name: agentic-bdd-test-case-mentor
-description: Review, rewrite, generate, and formally assess BDD or Gherkin feature files, scenarios, and scenario outlines from user stories, acceptance criteria, business rules, feature drafts, or example maps. Use when Codex needs to identify BDD anti-patterns, traceability or coverage gaps, weak Given-When-Then structure, overloaded scenarios, missing rule branches, or coaching-oriented improvements without drifting into framework-specific automation design.
-license: MIT
+description: Review, rewrite, generate, and assess BDD or Gherkin feature files, scenarios, and outlines from user stories, acceptance criteria, business rules, or example maps. Use to identify BDD anti-patterns, traceability or coverage gaps, weak Given-When-Then structure, overloaded scenarios, missing rule branches, or coaching-oriented improvements without framework-specific automation design.
 metadata:
-  version: 1.0.0
   dispatcher-layer: information
   dispatcher-lifecycle: active
   dispatcher-output-artifacts: bdd_review, improved_feature_file, coaching_report
@@ -14,14 +12,18 @@ metadata:
   dispatcher-stack-tags: testing, bdd, gherkin
   dispatcher-accepted-intents: review_bdd_test_cases, generate_bdd_test_cases, rewrite_bdd_test_cases
   dispatcher-category: testing
+
 ---
 
 ## Telemetry & Logging
 > [!IMPORTANT]
 > All usage of this skill must be logged via the Skill Dispatcher to ensure audit logs and wallboard analytics are accurate:
-> `./log-dispatch.cmd --skill <skill_name> --intent <intent> --reason <reason>` (or `./log-dispatch.sh` on Linux)
+> `./log-dispatch.cmd --skill <skill_name> --intent <intent> --model <model_name> --reason <reason>` (or `./log-dispatch.sh` on Linux)
 
 # Agentic BDD Test Case Mentor
+
+> **Version:** 1.0.1| **License:** MIT  
+
 
 Use this skill to improve the quality, clarity, and reviewability of BDD artifacts while keeping the output business-readable and traceable to the source of truth.
 

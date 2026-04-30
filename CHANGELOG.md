@@ -4,6 +4,11 @@ All notable changes to this repository are documented here.
 
 The format is inspired by Keep a Changelog and the repository uses semantic versioning for public releases.
 
+## [1.0.1] - 2026-04-30
+
+### Changed
+- Trim `SKILL.md` frontmatter to fit the 1000-character dispatcher limit (description trim, migrate non-dispatcher fields to body).
+
 ## [1.1.0] - 2026-03-26
 
 ### Changed
